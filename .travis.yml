@@ -6,13 +6,16 @@ cache: npm
 branches:
   only:
     - source_code # build master branch only
-script:
+
+script:                       # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
   - hexo clean
-  - hexo generate # generate static files
+  - hexo generate             # Hexo 常规命令，执行清理和生成
+
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
+  github-token: $GH_TOKEN
   on:
     branch: source_code
   target_branch: master
