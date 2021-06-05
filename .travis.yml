@@ -21,5 +21,5 @@ script:                       # 在构建阶段需要运行的命令，一条一
 after_success:                # script 阶段成功时执行，构建失败不会执行，其他同上
   - git config --local user.name "travis-ci"
   - git config --local user.email "deploy@travis-ci.org"
-  - sed -i'' "s~git@github.com:~https://${GH_TOKEN}@github.com/~" _config.yml
+  - sed -i'' "s~git@github.com:~https://${gh_token}@github.com/~" _config.yml
   - hexo deploy   # 通过 Hexo 的 deploy 命令部署博客
