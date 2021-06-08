@@ -57,4 +57,6 @@
     </div>
   {%- endif %}
 </body>
+
+<script src="/live2d-widget/autoload.js"></script>
 </html>

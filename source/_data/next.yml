@@ -1011,6 +1011,7 @@ typing_effect:
   colorful: true  # 礼花特效
   shake: false    # 震动特效
 
+
 # Assets
 css: css
 js: js
