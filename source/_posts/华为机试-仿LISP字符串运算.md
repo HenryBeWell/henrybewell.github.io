@@ -62,9 +62,9 @@ def lisp(string):
     
 if __name__ == '__main__':
     string = '(add 12 (sub 45 45))'
-	string2 = '(add 1 (div -7 3))'
+    string2 = '(add 1 (div -7 3))'
     print(lisp(string))
-	print(lisp(string2))
+    print(lisp(string2))
 
 ```
 
