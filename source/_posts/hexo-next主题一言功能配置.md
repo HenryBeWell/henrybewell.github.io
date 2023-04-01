@@ -21,7 +21,7 @@ categories:
 
 1. 站点目录下的 `source\_data\next.yml`启用`header`:
 
-   ```python
+   ```yaml
    custom_file_path:
      #head: source/_data/head.swig
      header: source/_data/header.swig
@@ -38,7 +38,7 @@ categories:
 
 2. 同级目录下新建`header.swig`（如果存在则忽略）并添加如下配置：
 
-```
+```javascript
  <!-- 一言API -->
 <!-- 现代写法，推荐 -->
 <!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
@@ -73,7 +73,7 @@ categories:
 
 3. 同级目录下新建`styles.styl`（如果存在则忽略）并添加如下配置：
 
-```python
+```css
 /* 增加每日一言模块 */
 .poem-wrap {
     position: relative;

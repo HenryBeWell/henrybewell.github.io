@@ -18,7 +18,7 @@ anconda安装及使用
 
 1. 命令行更换：
 
-   ```
+   ```shell
    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
@@ -37,7 +37,7 @@ C:\Users\Admin\.condarc
 
 将文件修改为
 
-```
+```shell
 channels:
   - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
   - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
@@ -48,7 +48,7 @@ show_channel_urls: true
 
 ## 常用语法
 
-```
+```shell
 conda list
 conda info -e    #用于查看拥有的环境
 conda remove -n 虚拟环境名称 --all    #删除对应环境
@@ -58,8 +58,8 @@ activate 环境名称  # windows用于激活虚拟环境
 
 ## 在jupyter中应用虚拟环境
 
-```
-conda activate 新环境 
+```shell
+conda activate # 新环境 
  
 conda install ipykernel    #经测试每个新环境都要装一次，不然下一句无法运行，但是不用重装jupyter
  
@@ -86,7 +86,7 @@ https://www.zhihu.com/question/31600197
 
 2. 并将.condarc文件中的https改为http，且删掉-defaults
 
-3. ```
+3. ```shell
    conda config --set ssl_verify no
    ```
 
